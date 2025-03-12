@@ -147,7 +147,6 @@ div.csl-indent {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked">
@@ -171,9 +170,6 @@ div.csl-indent {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">R_4_Archaeology</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://github.com/RonaldVisser/R_4_Archaeology/" title="Github repository van deze website" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-</div>
     </div>
       </div>
       <div class="mt-2 flex-shrink-0 align-items-center">
@@ -210,7 +206,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./spatial_analysis.html" class="sidebar-item-text sidebar-link">Plotting Data with ggplot</a>
+  <a href="./spatial_analysis.html" class="sidebar-item-text sidebar-link">Basic spatial analysis in R</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -282,7 +278,19 @@ div.csl-indent {
 <section id="importing-libraries-and-data" class="level1">
 <h1>Importing Libraries and Data</h1>
 <p>We won’t need the <code>hello world</code> line anymore, so delete it. Now copy the following code at the top of your file:</p>
-<p>Tip : using the hashtag symbol ( # ) adds a comment in the code that won’t be executed by R</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the hashtag symbol ( # ) adds a comment in the code that won’t be executed by R</p>
+</div>
+</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load libraries</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -324,7 +332,19 @@ Attaching package: 'pastecs'</code></pre>
 <p>This will load some libraries (pre-configured tool-collections, see https://www.statmethods.net/interface/packages.html for an explanation) that are required to complete the rest of the tutorial. Also, we set some options to force non scientific formatting of numbers.</p>
 <p>Tip : From now on, any code blocks in this tutorial need to be copied into your script, we won’t specifically tell you to each time. Code blocks are pieces of code on their own line(s), recognisable by this <code>font</code>.</p>
 <p>Now Source the script (CTRL + SHIFT + S) with just these lines of code, to see if the libraries are loaded.</p>
-<p>Tip : if you get an error saying “There is no package xxx”, this means that your installation of R doesn’t have this library installed yet. Copy and paste <code>install.packages("dplyr")</code> into the Console and press enter, this will install the library. Repeat this for all 3 libraries (dplyr, ggplot2, pastecs). You only need to install a package once, but you need to reload it every time you start a new project.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you get an error saying “There is no package xxx”, this means that your installation of R doesn’t have this library installed yet. Copy and paste <code>install.packages("dplyr")</code> into the Console and press enter, this will install the library. Repeat this for all 3 libraries (dplyr, ggplot2, pastecs). You only need to install a package once, but you need to reload it every time you start a new project.</p>
+</div>
+</div>
 <p>Installing can also be done via the Tools menu in RStudio:<img src="images/RStudio_install_packages.png" class="img-fluid" alt="Install packages using the RStudio-menu"></p>
 <p>Before we can do any analysis, we need to import some data. We will be using find information from the Cuijk-Heeswijk excavation in the Netherlands.<span class="citation" data-cites="roessingh roessingh2009">(<a href="#ref-roessingh" role="doc-biblioref">Roessingh and Vanneste, n.d.</a>, <a href="#ref-roessingh2009" role="doc-biblioref">2009</a>)</span> First, download the example data here: <a href="./data/data.zip">zip-file with data</a></p>
 <p>Then unzip this file, this should give you a folder called <code>data</code>. Place this folder in your RStudio project folder using your computer’s file manager. <code>data</code> should now appear in the file manager (bottom right) of RStudio.</p>
@@ -367,7 +387,19 @@ Attaching package: 'pastecs'</code></pre>
 10    FALSE           1-10-2007                </code></pre>
 </div>
 </div>
-<p><strong>Tip</strong>: Instead of pressing the Source button and running the entire script, you can also run just parts of your script, by selecting a number of lines and using the Run button (or pressing CTRL + ENTER). You can also just place your cursor on a line and press Run, try this now with the <code>head(…)</code> line above! But be aware that any variables you use must have been run before and be visible in the Environment tab.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Instead of pressing the Source button and running the entire script, you can also run just parts of your script, by selecting a number of lines and using the Run button (or pressing CTRL + ENTER). You can also just place your cursor on a line and press Run, try this now with the <code>head(…)</code> line above! But be aware that any variables you use must have been run before and be visible in the Environment tab.</p>
+</div>
+</div>
 
 
 
