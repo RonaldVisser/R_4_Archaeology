@@ -22,6 +22,7 @@ author:
       - name: Nederlands Forensisch Instituut
         city: Den Haag
         country: Netherlands
+bibliography: references.bib
 ---
 
 # Plotting Data with `ggplot`
@@ -195,7 +196,7 @@ feature_sums_break <- mutate(feature_sums, break_index = GEWICHT / AANTAL)
 ggplot(feature_sums_break, aes(x=break_index)) + geom_histogram(bins = 100)
 ```
 
-It becomes clear that we have some extremes and therefore need to filter the extremes out. We continue our analysis with the smaller break_indices (\< 100). We have used histograms so far. However, histograms have a very big disadvantage and that is that they are dependent on the size and startpoint of bins. Kernel Density Estimation is much more flexible and robust (see also this paper from 1996: <http://www.archcalc.cnr.it/indice/PDF7/33_Baxter_Beardah.pdf> ). See and compare these two for yourself. You can also make the for the other data you've analysed in the sections above.
+It becomes clear that we have some extremes and therefore need to filter the extremes out. We continue our analysis with the smaller break_indices (\< 100). We have used histograms so far. However, histograms have a very big disadvantage and that is that they are dependent on the size and startpoint of bins. Kernel Density Estimation is much more flexible and robust (see also this paper from 1996: <http://www.archcalc.cnr.it/indice/PDF7/33_Baxter_Beardah.pdf> [@baxter1996]). See and compare these two for yourself. You can also make the for the other data you've analysed in the sections above.
 
 ```{r}
 feature_sums_break_idx100 <- filter(feature_sums_break, break_index < 100)
