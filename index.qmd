@@ -30,4 +30,4 @@ In this tutorial, you will learn how to use the programming language R to solve 
 
 We assume you have already installed R and RStudio, if you haven't, please do so now. You can download R here: <https://cran.r-project.org/>. RStudio is found here: <https://posit.co/downloads/>
 
-If you want to learn more basis aspects or R, you can try, for example, this course: <https://www.w3schools.com/R/default.asp>
+If you want to learn more basis aspects or R, you can try, for example, this course: <https://www.w3schools.com/R/default.asp>.
