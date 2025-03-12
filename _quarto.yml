@@ -3,7 +3,7 @@ project:
 
 website:
   page-navigation: true
-  site-url: "https://ronaldvisser.github.io/Zotero_WC/"
+  site-url: "https://ronaldvisser.github.io/R_4_Archaeology/"
   repo-url: https://github.com/RonaldVisser/R_4_Archaeology/
   title: "R_4_Archaeology"
   repo-actions: [issue]
