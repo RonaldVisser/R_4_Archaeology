@@ -1,0 +1,27 @@
+---
+title: "About"
+format: html
+editor: visual
+author:
+  - name: Ronald Visser
+    orcid: 0000-0001-6966-1729
+    email: r.m.visser@saxion.nl
+    affiliation: 
+      - name: Saxion University of Applied Sciences
+        city: Deventer
+        country: Netherlands
+  - name: Alex Brandsen
+    orcid: 0000-0003-1623-1340
+    email: a.brandsen@arch.leidenuniv.nl
+    affiliation: 
+      - name: Universiteit Leiden
+        city: Leiden
+        country: Netherlands
+  - name: Anne Dijkstra
+    affiliation: 
+      - name: Nederlands Forensisch Instituut
+        city: Den Haag
+        country: Netherlands
+---
+
+This tutorial was originally created for a DAWN-workshop in Amsterdam in 2019. It is now available for everyone to use under the Creative Commons License (CC-BY-NC)

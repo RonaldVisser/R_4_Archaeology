@@ -1,0 +1,83 @@
+---
+title: "Join tables and bacic statistics"
+format: html
+editor: visual
+author:
+  - name: Ronald Visser
+    orcid: 0000-0001-6966-1729
+    email: r.m.visser@saxion.nl
+    affiliation: 
+      - name: Saxion University of Applied Sciences
+        city: Deventer
+        country: Netherlands
+  - name: Alex Brandsen
+    orcid: 0000-0003-1623-1340
+    email: a.brandsen@arch.leidenuniv.nl
+    affiliation: 
+      - name: Universiteit Leiden
+        city: Leiden
+        country: Netherlands
+  - name: Anne Dijkstra
+    affiliation: 
+      - name: Nederlands Forensisch Instituut
+        city: Den Haag
+        country: Netherlands
+---
+
+# Joining Tables and Basic Statistics
+
+```{r, setup, include=FALSE}
+# load libraries
+library(dplyr)
+library(ggplot2)
+library(pastecs)
+# read CSV files and store in variables
+finds <- read.csv("data/VONDST.csv", row.names=NULL)
+bag_contents <- read.csv("data/SPLITS2.csv")
+```
+
+So now we have the two tables stored in variables separately, but to be able to do analyses using information from both, we need to join them. We can do this with the `inner_join()` function:
+
+```{r}
+# join 2 tables on column VONDSTNR
+finds_total <- inner_join(finds, bag_contents, by ="VONDSTNR")
+```
+
+This function takes the first two arguments (finds & bag_contents) and joins them together where VONDSTNR (find number) is the same in both tables. Now have a look in the Environment tab, you should see a finds_total variable, open it in table view to check the data has been merged successfully.
+
+Now we have all the data in one variable, we can very easily do some basic descriptive statistics on this table by using the `summary()` function:
+
+```{r}
+# display basic statistics for variable 'finds_total'
+summary(finds_total)
+```
+
+This returns quite a lot of information for each column. For numerical data, it will return the min and max value, as well as the mean and median. For text data, it will give you counts for each occurance in that column. So for example, we can see that the mean weight (column GEWICHT) of a finds bag is 60.56 and the maximum finds in one bag is 200 (column AANTAL).
+
+Of course this could be useful information for some research, but generally we want to do more in depth analysis, such as comparing finds between features. To do this, we first need to group finds by SPOORNR (feature number) and then sum the weight and number of finds.
+
+```{r}
+# group by feature number (SPOORNR) and sum number of finds (AANTAL) and weight (GEWICHT)
+feature_groups <- group_by(finds_total, SPOORNR)
+feature_sums <- summarise(feature_groups, 
+                          AANTAL = sum(AANTAL), 
+                          GEWICHT = sum(GEWICHT))
+```
+
+Here we use the `group_by()` function to group finds_total by SPOORNR and save it as feature_groups. Then we use `summarise()` to sum the number of finds (AANTAL) and weight (GEWICHT) in the grouped table, giving us the weight and number of finds per feature (saved in variable feature_sums). In your Environment tab, view feature_sums in table view to see what the data looks like.
+
+Now we can use the `stat.desc()` function from the [dyplr](https://dplyr.tidyverse.org/) library to view statistics about specific columns. We give the function the variable plus the column we want statistics for, joined by the dollar sign ( \$ ):
+
+```{r}
+# view stats on number of finds (AANTAL) and weight (GEWICHT)
+stat.desc(feature_sums$AANTAL)
+stat.desc(feature_sums$GEWICHT)
+```
+
+In the output in the Console we can see the sum, median, mean, and so in for both of these columns. For example, the maximum number of finds in a feature is 1363. This gives us some information about the distribution of finds per feature, but it's much easier to view this sort of information as a graph, which is what we'll do in the next section.
+
+At this point, your code should look something like this:
+
+![](images/Script_screenshot.jpg)
+
+If it doesn't, or if you get any errors, please download [this file](R/checkpoint1.r) and copy it into your dawn-course.r file, so you can continue with the next part.

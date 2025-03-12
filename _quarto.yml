@@ -1,0 +1,29 @@
+project:
+  type: website
+
+website:
+  title: "R_4_Archaeology"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Introduction
+      - href: projects.qmd
+        text: Projects in RStudio
+      - href: libraries_data.qmd
+        text: Importing Libraries and Data
+      - href: join_statistics.qmd
+        text: Joining Tables and Basic Statistics
+      - href: plotting_data.qmd
+        text: Plotting Data with ggplot
+      - href: spatial_analysis.qmd
+        text: Plotting Data with ggplot
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+

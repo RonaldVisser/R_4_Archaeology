@@ -1,0 +1,65 @@
+---
+title: "Projects in RStudio"
+format: html
+editor: visual
+author:
+  - name: Ronald Visser
+    orcid: 0000-0001-6966-1729
+    email: r.m.visser@saxion.nl
+    affiliation: 
+      - name: Saxion University of Applied Sciences
+        city: Deventer
+        country: Netherlands
+  - name: Alex Brandsen
+    orcid: 0000-0003-1623-1340
+    email: a.brandsen@arch.leidenuniv.nl
+    affiliation: 
+      - name: Universiteit Leiden
+        city: Leiden
+        country: Netherlands
+  - name: Anne Dijkstra
+    affiliation: 
+      - name: Nederlands Forensisch Instituut
+        city: Den Haag
+        country: Netherlands
+---
+
+# Projects in RStudio
+
+In this tutorial, you will be using RStudio , a free and open-source integrated development environment (IDE) for R. RStudio makes programming in R easier and quicker. Working in a project also automatically sets the working directory, something you have to do manually when writing R scripts outside of projects. The first step to start work on a new script or analysis is to open Rstudio, and then create a project.
+
+## Creating a Project
+
+RStudio projects are associated with R working directories. You can create an RStudio project:
+
+-   In a brand new directory
+
+-   In an existing directory where you already have R code and data
+
+-   Advanced: by cloning a version control (Git or Subversion) repository
+
+We will create a project in a new directory. To do this, use the Create Project command on the toolbar, or go to File \> New Project.
+
+Then select New Directory \> New Project, and fill in a Directory Name (this is the name of your project, we will use "dawn-course" for this tutorial). Then click on Browse to select in which directory you want the project to live (your desktop is ok for now).
+
+When a new project is created in RStudio, this:
+
+1.  Creates a project file (with an .Rproj extension) within the project directory. This file contains various project options and can also be used as a shortcut for opening the project directly from the filesystem.
+
+2.  Creates a hidden directory (named .Rproj.user) where project-specific temporary files (e.g. auto-saved source documents, window-state, etc.) are stored. This directory is also automatically added to .Rbuildignore, .gitignore, etc. if required.
+
+3.  Loads the project into RStudio and display its name in the Projects toolbar (which is located on the far right side of the main toolbar).
+
+## Creating a File
+
+No actual R file has been created yet though, so go to File \> New File \> R Script (or press CTRL + SHIFT + N).
+
+Tip : Wherever we use the button CTRL, replace this with the CMD button (⌘) on Mac systems. A full list of shortcuts can be found here . This creates an empty, untitled R script. Now enter:
+
+`print("Hello World!")`
+
+In the top left area and click the save button or press CTRL + S to save the file.
+
+Enter a name for the file, generally you would give this file the same name as the project, but with ".r" after it (so "dawn-course.r" if you followed our example above). Now to run our program, press CTRL + SHIFT + S or press the "Source" button.
+
+This will run the entire script and output "Hello World!" to the Console screen under your script. Congratulations, you've run your first R script in Rstudio!
