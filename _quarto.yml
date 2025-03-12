@@ -28,7 +28,7 @@ website:
       - href: plotting_data.qmd
         text: Plotting Data with ggplot
       - href: spatial_analysis.qmd
-        text: Plotting Data with ggplot
+        text: Basic spatial analysis in R
       - about.qmd
 
 format:
