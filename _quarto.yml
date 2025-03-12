@@ -13,10 +13,6 @@ website:
     left: "&copy; CC-By-NC Ronald Visser, Alex Brandsen & Anne Dijkstra 2025"
   
   sidebar:
-    tools:
-      - icon: github
-        href: https://github.com/RonaldVisser/R_4_Archaeology/
-        text: "Github repository van deze website"
     style: "docked"
     search: true
     collapse-level: 1
@@ -37,9 +33,12 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      light: [theme]
+    code-copy: true
+    code-overflow: wrap
     toc: true
 
-editor: visual
+filters:
+  - quarto
 
