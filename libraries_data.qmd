@@ -29,7 +29,9 @@ author:
 
 We won't need the `hello world` line anymore, so delete it. Now copy the following code at the top of your file:
 
-Tip : using the hashtag symbol ( \# ) adds a comment in the code that won't be executed by R
+::: callout-tip
+Using the hashtag symbol ( \# ) adds a comment in the code that won't be executed by R
+:::
 
 ```{r}
 # load libraries
@@ -48,7 +50,9 @@ Tip : From now on, any code blocks in this tutorial need to be copied into your 
 
 Now Source the script (CTRL + SHIFT + S) with just these lines of code, to see if the libraries are loaded.
 
-Tip : if you get an error saying "There is no package xxx", this means that your installation of R doesn't have this library installed yet. Copy and paste `install.packages("dplyr")` into the Console and press enter, this will install the library. Repeat this for all 3 libraries (dplyr, ggplot2, pastecs). You only need to install a package once, but you need to reload it every time you start a new project.
+::: callout-tip
+If you get an error saying "There is no package xxx", this means that your installation of R doesn't have this library installed yet. Copy and paste `install.packages("dplyr")` into the Console and press enter, this will install the library. Repeat this for all 3 libraries (dplyr, ggplot2, pastecs). You only need to install a package once, but you need to reload it every time you start a new project.
+:::
 
 Installing can also be done via the Tools menu in RStudio:![Install packages using the RStudio-menu](images/RStudio_install_packages.png)
 
@@ -79,4 +83,6 @@ You can also view the top 10 rows of the table in the Console by doing:
 head(bag_contents, n=10)
 ```
 
-**Tip**: Instead of pressing the Source button and running the entire script, you can also run just parts of your script, by selecting a number of lines and using the Run button (or pressing CTRL + ENTER). You can also just place your cursor on a line and press Run, try this now with the `head(…)` line above! But be aware that any variables you use must have been run before and be visible in the Environment tab.
+::: callout-tip
+Instead of pressing the Source button and running the entire script, you can also run just parts of your script, by selecting a number of lines and using the Run button (or pressing CTRL + ENTER). You can also just place your cursor on a line and press Run, try this now with the `head(…)` line above! But be aware that any variables you use must have been run before and be visible in the Environment tab.
+:::
