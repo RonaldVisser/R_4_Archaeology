@@ -2,9 +2,25 @@ project:
   type: website
 
 website:
+  page-navigation: true
+  site-url: "https://ronaldvisser.github.io/Zotero_WC/"
+  repo-url: https://github.com/RonaldVisser/R_4_Archaeology/
   title: "R_4_Archaeology"
-  navbar:
-    left:
+  repo-actions: [issue]
+  
+  page-footer:
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "&copy; CC-By-NC Ronald Visser, Alex Brandsen & Anne Dijkstra 2025"
+  
+  sidebar:
+    tools:
+      - icon: github
+        href: https://github.com/RonaldVisser/R_4_Archaeology/
+        text: "Github repository van deze website"
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
       - href: index.qmd
         text: Introduction
       - href: projects.qmd
