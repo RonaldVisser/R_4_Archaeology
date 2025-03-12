@@ -33,7 +33,7 @@ We won't need the `hello world` line anymore, so delete it. Now copy the followi
 Using the hashtag symbol ( \# ) adds a comment in the code that won't be executed by R
 :::
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 # load libraries
 library(dplyr)
 library(ggplot2)
