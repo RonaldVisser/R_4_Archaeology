@@ -66,7 +66,7 @@ feature_sums <- summarise(feature_groups,
 
 Here we use the `group_by()` function to group finds_total by SPOORNR and save it as feature_groups. Then we use `summarise()` to sum the number of finds (AANTAL) and weight (GEWICHT) in the grouped table, giving us the weight and number of finds per feature (saved in variable feature_sums). In your Environment tab, view feature_sums in table view to see what the data looks like.
 
-Now we can use the `stat.desc()` function from the [dyplr](https://dplyr.tidyverse.org/) library to view statistics about specific columns. We give the function the variable plus the column we want statistics for, joined by the dollar sign ( \$ ):
+Now we can use the `stat.desc()` function from the [pastecs](https://cran.r-project.org/package=pastecs) library to view statistics about specific columns. We give the function the variable plus the column we want statistics for, joined by the dollar sign ( \$ ):
 
 ```{r}
 # view stats on number of finds (AANTAL) and weight (GEWICHT)
