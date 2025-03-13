@@ -28,7 +28,7 @@ author:
 
 If you have finished all of the above, and want to try some GIS in R, please try the tutorial in the link below:
 
-<https://benmarwick.github.io/How-To-Do-Archaeological-Science-Using-R/using-r-as-agis-working-with-raster-and-vector-data.html>
+<https://benmarwick.github.io/How-To-Do-Archaeological-Science-Using-R/using-r-as-a-gis-working-with-raster-and-vector-data.html>
 
 You can download all the data for this entire book here:
 
