@@ -206,7 +206,7 @@ ggplot(feature_sums_break_idx100, aes(x=break_index)) +
   geom_density()
 ```
 
-At this point, if you've run into any errors or problems, you can download and copy [this file](R/checkpoint2.R) to get a working script.
+At this point, if you've run into any errors or problems, you can download and copy [this file](https://github.com/RonaldVisser/R_4_Archaeology/blob/main/R/checkpoint2.R) to get a working script.
 
 There is a feature with and extreme amount of finds. This is feature (SPOORNR) 3000. Try to make a barplot with the number and weight of finds in the feature.
 

@@ -80,4 +80,4 @@ At this point, your code should look something like this:
 
 ![](images/Script_screenshot.jpg)
 
-If it doesn't, or if you get any errors, please download [this file](R/checkpoint1.r) and copy it into your dawn-course.r file, so you can continue with the next part.
+If it doesn't, or if you get any errors, please download [this file](https://github.com/RonaldVisser/R_4_Archaeology/blob/main/R/checkpoint1.R) and copy it into your dawn-course.r file, so you can continue with the next part.
