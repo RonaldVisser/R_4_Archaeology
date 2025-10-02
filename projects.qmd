@@ -38,9 +38,9 @@ RStudio projects are associated with R working directories. You can create an RS
 
 -   Advanced: by cloning a version control (Git or Subversion) repository
 
-We will create a project in a new directory. To do this, use the Create Project command on the toolbar, or go to File \> New Project.
+We will create a project in a new directory. To do this, use the Create Project command on the toolbar, or go to `File > New Project.`
 
-Then select New Directory \> New Project, and fill in a Directory Name (this is the name of your project, we will use "dawn-course" for this tutorial). Then click on Browse to select in which directory you want the project to live (your desktop is ok for now).
+Then select `New Directory > New Project`, and fill in a Directory Name (this is the name of your project, we will use "dawn-course" for this tutorial). Then click on Browse to select in which directory you want the project to live (your desktop is ok for now).
 
 When a new project is created in RStudio, this:
 
@@ -52,7 +52,7 @@ When a new project is created in RStudio, this:
 
 ## Creating a File
 
-No actual R file has been created yet though, so go to File \> New File \> R Script (or press CTRL + SHIFT + N).
+No actual R file has been created yet though, so go to `File > New File > R Script` (or press CTRL + SHIFT + N).
 
 Tip : Wherever we use the button CTRL, replace this with the CMD button (⌘) on Mac systems. A full list of shortcuts can be found here . This creates an empty, untitled R script. Now enter:
 

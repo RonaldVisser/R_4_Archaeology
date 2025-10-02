@@ -56,7 +56,7 @@ If you get an error saying "There is no package xxx", this means that your insta
 
 Installing can also be done via the Tools menu in RStudio:![Install packages using the RStudio-menu](images/RStudio_install_packages.png)
 
-Before we can do any analysis, we need to import some data. We will be using find information from the Cuijk-Heeswijk excavation in the Netherlands.[@roessingh; @roessingh2009] First, download the example data here: [zip-file with data](./data/data.zip)
+Before we can do any analysis, we need to import some data. We will be using find information from the Cuijk-Heeswijk excavation in the Netherlands [@roessingh; @roessingh2009]. First, download the example data here: [zip-file with data](./data/data.zip)
 
 Then unzip this file, this should give you a folder called `data`. Place this folder in your RStudio project folder using your computer's file manager. `data` should now appear in the file manager (bottom right) of RStudio.
 

@@ -24,4 +24,4 @@ author:
         country: Netherlands
 ---
 
-This tutorial was originally created for a DAWN-workshop in Amsterdam in 2019. It is now available for everyone to use under the Creative Commons License (CC-BY-NC).
+This tutorial was originally created for a DAWN-workshop in Amsterdam in 2019. It was made available for everyone in 2025 to use under the Creative Commons License (CC-BY-NC). If you see any mistakes or errors, please open an [issue](https://github.com/RonaldVisser/R_4_Archaeology/issues) of make a [pull request](https://github.com/RonaldVisser/R_4_Archaeology/pulls) via GitHub.
