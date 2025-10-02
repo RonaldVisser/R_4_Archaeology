@@ -4,14 +4,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This tutorial was originally created for a DAWN-workshop in Amsterdam in 2019. It is now available for everyone to use under the Creative Commons License (CC-BY-NC)."
+    "text": "This tutorial was originally created for a DAWN-workshop in Amsterdam in 2019. It was made available for everyone in 2025 to use under the Creative Commons License (CC-BY-NC). If you see any mistakes or errors, please open an issue of make a pull request via GitHub."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Workshop R for Archaeology",
     "section": "",
-    "text": "In this tutorial, you will learn how to use the programming language R to solve archaeological problems. Specifically, we will show how to manage R projects, load in archaeological data, do descriptive statistics and plot data in different ways.\nWe assume you have already installed R and RStudio, if you haven’t, please do so now. You can download R here: https://cran.r-project.org/. RStudio is found here: https://posit.co/downloads/\nIf you want to learn more basis aspects or R, you can try, for example, this course: https://www.w3schools.com/R/default.asp."
+    "text": "In this tutorial, you will learn how to use the programming language R to solve archaeological problems. Specifically, we will show how to manage R projects, load in archaeological data, do descriptive statistics and plot data in different ways.\nWe assume you have already installed R and RStudio, if you haven’t, please do so now. You can download R here: https://cran.r-project.org/. After you have installed R you can install RStudio, which is found here: https://posit.co/downloads/\nIf you want to learn more basis aspects or R, you can try, for example, this course: https://www.w3schools.com/R/default.asp."
   },
   {
     "objectID": "join_statistics.html",
@@ -25,7 +25,7 @@
     "href": "libraries_data.html",
     "title": "Importing libraries and data",
     "section": "",
-    "text": "References\n\nRoessingh, W., and H. C. G. M. Vanneste. 2009. Cuijk  Heeswijkse Kampen. De Archeologische Opgraving van Vindplaats 4 En 7. ADC Rapport 1173. Amersfoort: ADC Archeoprojecten.\n\n\n———. n.d. “Cuijk Heeswijkse Kampen vp 7 DO.” https://doi.org/10.17026/DANS-ZK2-XMRQ."
+    "text": "References\n\nRoessingh, W., and H. C. G. M. Vanneste. 2007. “Cuijk Heeswijkse Kampen vp 7 DO.” DANS Data Station Archaeology. https://doi.org/10.17026/DANS-ZK2-XMRQ.\n\n\n———. 2009. Cuijk  Heeswijkse Kampen. De Archeologische Opgraving van Vindplaats 4 En 7. ADC Rapport 1173. Amersfoort: ADC Archeoprojecten."
   },
   {
     "objectID": "plotting_data.html",
